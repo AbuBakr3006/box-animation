@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+}
+
+.you {
+    text-align: center;
+    font-size: 120px;
+    line-height: 250px;
+    
+}
+
+.bx {
+    text-align: center;
+    font-size: 120px;
+    padding-top: 60px;
+}
+
+
+
+.box {
+    width: 250px;
+    height: 250px;
+    transition: 1.5s ease;
+    transform-style: preserve-3d;
+    transition-timing-function: ease;
+
+}
+
+.cub {
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    text-align: center;
+}
+
+.content {
+    width: 250px;
+    perspective: 1000px;
+    margin-right: 40px;
+
+}
+
+.front {
+    transform: translate3d(0, 0, 125px);
+}
+
+.box:hover {
+    transform: rotateX(180deg) rotateY(360deg);
+}
+
+
+.left {
+    transform: translate3d(-125px, 0, 0) rotateY(90deg);
+}
+
+.back {
+    transform: translate3d(0, 0, -125px) rotateX(180deg);
+    background-color: red;
+
+}
+
+.back-twitter{
+    transform: translate3d(0, 0, -125px) rotateX(180deg);
+    background-color: blue;
+}
+
+
+.right {
+    transform: translate3d(125px, 0, 0) rotateY(-90deg);
+}
+
+.top {
+    transform: translate3d(0, 125px, 0) rotateX(90deg);
+}
+
+.bottom {
+    transform: translate3d(0, -125px, 0) rotateX(90deg);
+}
